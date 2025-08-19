@@ -16,7 +16,7 @@ import objectRepository.HomePage;
 
 @Listeners(ListenerUtility.class)
 public class TC_DWS_005_Test extends BaseClass {	
-	@Test
+	@Test()
 	public void clickOnBook() throws EncryptedDocumentException, IOException{		
 		hp=new HomePage(driver);
 		

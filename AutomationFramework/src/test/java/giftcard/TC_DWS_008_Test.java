@@ -11,6 +11,7 @@ import com.aventstack.extentreports.Status;
 
 import genericUtility.BaseClass;
 import genericUtility.ListenerUtility;
+import genericUtility.WebDriverUtility;
 import objectRepository.HomePage;
 @Listeners(ListenerUtility.class)
 public class TC_DWS_008_Test extends BaseClass {
@@ -24,6 +25,9 @@ public class TC_DWS_008_Test extends BaseClass {
 		*/
 		hp=new HomePage(driver);
 		hp.getGiftcardlink().click();
+		
+		//Wutil.switchToAlertAndDismissAccept(driver);
+		
 		
 		Assert.assertEquals(driver.getTitle(), eutil.getStringDataFromExcel("GiftCard", 1, 0), "Giftcard page is not display");
 		

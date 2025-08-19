@@ -18,7 +18,7 @@ import objectRepository.HomePage;
 public class TC_DWS_006_Test extends BaseClass {
 
 	
-	@Test
+	@Test()
 	
 	public void clickOnComputer() throws EncryptedDocumentException, IOException {
 		
