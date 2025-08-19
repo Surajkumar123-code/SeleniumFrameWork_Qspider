@@ -1,7 +1,5 @@
 package car;
 
-
-
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -9,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class Bmw {
+public class TataTest {
 	
-	
+
 	@Test(groups = "Smoke")
 	public void launch() {
 		
@@ -20,13 +18,10 @@ public class Bmw {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
-		driver.get("https://www.bmw.in/en/index.html");
+		driver.get("https://www.tatamotors.com/");
 		
-		Reporter.log("bmw launch sucessfully", true);
+		Reporter.log("tata launch sucessfully", true);
 	}
 	
-	
-
-
 
 }
